@@ -1,18 +1,47 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title></title>
+  </head>
 
-
-</head>
-
-<body>
+  <body>
     <!-- <button onclick="alert('ddd123')">xxx</button> -->
     <!-- <a href="javascript:alert('asd')"> dianyixia</a>-->
+    <script>
+      /*
+      var bar = "asd";
+      bar[0] = 200;
+      console.log(bar);
+      console.log(bar[0]);
+      */
+      console.log('hello world');
+      var x = {
+        age: 25,
+        name: 'mikkel',
+        id: 909009,
+      };
+      console.log(x['age']);
 
+      // function
+      function addition(val1, val2) {
+        return val1 + val2;
+      }
+      const add = addition(2, 5);
+      console.log(add);
 
-</body>
+      var inputArr = [23, 9, 14, 2, 28, 19, 3, 15, 9, 25, 2, 4, 9];
+      function mean(inputArr) {
+        var sum = 0;
+        var avg = 0;
+        for (var i = 0; i < inputArr.length; i++) {
+          sum += inputArr[i];
+        }
+        avg = sum / inputArr.length;
+        return avg;
+      }
 
+      console.log(mean(inputArr));
+    </script>
+  </body>
 </html>
